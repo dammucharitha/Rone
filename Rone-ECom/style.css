@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+}
+h1{
+    font-size: 50px;
+    color:#222 ;
+    line-height:60px ;
+}
+h2{
+    font-size: 46px;
+    color:#222 ;
+    line-height:52px 
+}
+h4{
+    font-size:20px ;
+    color: #222;
+}
+h6{
+    font-weight: 500;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;   
+}
+.logo{
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    color: #088178;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navbar li{
+    list-style-type: none;
+    padding: 0px 15px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+#navbar li a:hover,
+#navbar li a.active  {
+    color: #088178;
+}
+#mobile{
+    display: none;
+    align-items:center;
+}
+#close{
+    display: none;
+}
+/*hero*/
+#hero{
+    background-image: url("https://img.freepik.com/free-photo/handsome-confident-hipster-modelsexy-unshaven-man-dressed-summer-stylish-green-hoodie-jeans-clothes-fashion-male-with-curly-hairstyle-posing-studio-isolated-blue_158538-26582.jpg?w=900&t=st=1688641814~exp=1688642414~hmac=9ff3be7ff5d01309fb06cc4bc810ce6e4f168df283e37f28431fad617a792ec4");
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    background-position-x:200px ;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+#hero h1{
+    color: #088178;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero button{
+    background-color: #20B2AA;
+    border: 0;
+    border-radius: 60px 2px 60px 2px;
+    height: 3.4rem;
+    width: 5.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+}
+.images{
+    height: 7rem;
+    width: 6.5rem;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0px;
+}
+button.normal {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    border:none;
+    transition: 2s ease;
+
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    font-weight: 600;
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+}
+#product1 .pro-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 2s ease;
+  
+}
+#product1 .pro img {
+    border-radius: 20px;
+    width: 100%;
+}
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+
+}
+#product1 .pro .des span {
+    color:#606063 ;
+    font-weight: bold;
+    font-size: 12px;
+}
+#product1 .pro .des h5 {
+    font-size:14px ;
+    color: #1a1a1a;
+    padding-top: 7px;
+}
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243,181,25)
+}
+#product1 .pro .des h4 {
+    color: #088178;
+    font-size: 14px;
+    padding-top: 7px;
+    font-weight: 700;
+}
+#product1 .pro .cart {
+    display: inline-block;
+    height: 47px;
+    width: 47px;
+    line-height: 45px;
+    border-radius: 60%;
+    background-color: #e8f6e8;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #20B2AA;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2 {
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner button:hover {
+    background-color: #088178;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #041e42;
+}
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button {
+    color: #fff;
+    background-color: #088178;
+    white-space: nowrap;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;
+}
+.footer .follow {
+    margin-top: 20px;
+}
+.footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+.copyright{
+    text-align: center;
+    width: 100%;
+}
+
+
+/*media quiries*/
+
+@media (max-width:799px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.5 sec ease-in-out;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 10px;
+    }
+    #mobile{
+        display: flex;
+        align-items:center;
+    }
+    #mobile i{
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        color: #222;
+        top: 30px;
+        font-size: 24px;
+        left: 30px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero{
+        background-image: none;
+        background-color: #89cff0;
+        padding: 0px 80px;
+    }
+    #feature{
+        justify-content: center;
+    }
+    #product1 .pro-container{
+        justify-content: center;
+    }
+    #product1 .pro{
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
